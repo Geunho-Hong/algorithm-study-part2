@@ -14,8 +14,8 @@ public class SearchInsertPosition {
         // O(log N)의 시간복잡도
         int i = Arrays.binarySearch(nums, target);
 
-        if (i < 0) // Arrays.binarySearch() 는 검색할 값이 없으면 들어가야할 인덱스를 음수로 반환
-            i = Math.abs(i + 1); // 음수를 절대 값으로 변환
+        if (i < 0) // Arrays.binarySearch() 는 검색할 값이 없으면 들어가야할 인덱스 - 1의 값을 음수로 반환
+            i = Math.abs(i + 1); // 음수에 1을 더한 값을 절대 값으로 변환
 
         return i;
     }
