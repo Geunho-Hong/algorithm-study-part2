@@ -6,16 +6,20 @@ package min.array;
 public class MaximumSubarray {
 
     public static void main(String[] args) {
+        int negativeResult = maxSubArrayKadanes(new int[]{-1});
+        System.out.println("negativeResult = " + negativeResult);
+
         int result = maxSubArrayKadanes(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4});
         System.out.println("result = " + result);
     }
 
+    // https://sustainable-dev.tistory.com/23
     public static int maxSubArrayKadanes(int[] nums) { // DP O(n)
         // max 를 첫 번째 원소로 초기화
         int localMax = nums[0];
         int globalMax = nums[0];
 
-        for (int i = 1; i < nums.length; i++) { // 첫번째 원소는 그 자체가 max 이기 때문에 두 번째 원소부터 계산
+        for (int i = 1; i < nums.length; i++) { // 첫번째 원소는 값 자체가 max 이기 때문에 두 번째 원소부터 계산
             localMax = Math.max(nums[i], localMax + nums[i]);
             if (localMax > globalMax) {
                 globalMax = localMax;
