@@ -128,14 +128,6 @@ public class Main {
 
             return answer;
         }
-
-        public List<Integer> findNum(int[] candidates, int target, int idx) {
-
-            for (int i = idx; i < candidates.length; i++) {
-                int currentNum = candidates[i];
-
-            }
-        }
     }
 
 }
