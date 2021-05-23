@@ -7,6 +7,10 @@ public class ContainerWithMostWater {
         System.out.println("result = " + result);
     }
 
+    // max =
+    // 0  1  2  3  4  5  6  7  8
+    // s                       e
+    // 1, 8, 6, 2, 5, 4, 8, 3, 7
     public static int maxArea(int[] height) { // O(n)
         int maxArea = 0; // 최대 면적
         int start = 0; // 시작 포인터

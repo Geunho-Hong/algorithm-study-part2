@@ -15,7 +15,7 @@ public class CombinationSum {
     }
 
     public static List<List<Integer>> combinationSum(int[] candidates, int target) {
-        Arrays.sort(candidates);
+        Arrays.sort(candidates); // 작은 수부터
         recursion(candidates, target, 0);
 
         // candidates: [2, 3, 6, 7]

@@ -16,8 +16,8 @@ public class MaximumSubarray {
     // https://sustainable-dev.tistory.com/23
     public static int maxSubArrayKadanes(int[] nums) { // DP O(n)
         // max 를 첫 번째 원소로 초기화
-        int localMax = nums[0];
-        int globalMax = nums[0];
+        int globalMax = nums[0]; // 결과
+        int localMax = nums[0]; // 이전까지의 합을 저장해놔야 하기 때문에 for문 밖에 선언
 
         for (int i = 1; i < nums.length; i++) { // 첫번째 원소는 값 자체가 max 이기 때문에 두 번째 원소부터 계산
             localMax = Math.max(nums[i], localMax + nums[i]);
