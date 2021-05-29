@@ -15,11 +15,10 @@ public class 완주하지_못한_선수 {
         System.out.println("result = " + result);
     }
 
-
     static class Solution {
 
         public String solution(String[] participant, String[] completion) {
-            int capacity = (int) (participant.length * 1.3);
+            int capacity = (int) (participant.length * 1.5);
             Map<String, Integer> map = new HashMap<>(capacity);
 
             for (String player : participant) {

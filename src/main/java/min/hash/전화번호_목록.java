@@ -14,8 +14,8 @@ public class 전화번호_목록 {
     public static boolean solution(String[] phoneBook) {
         Arrays.sort(phoneBook, Comparator.comparing(String::length));
 
-        int initialCapacity = (int) (phoneBook.length * 1.3);
-        Map<String, Void> map = new HashMap<>(initialCapacity);
+        int capacity = (int) (phoneBook.length * 1.5);
+        Map<String, Void> map = new HashMap<>(capacity);
 
         for (String phoneNumber : phoneBook) {
             // 12 88 123 567 1235
