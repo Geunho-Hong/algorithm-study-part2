@@ -4,6 +4,7 @@ import java.util.HashMap
 
 class HashLevel2Clothes {
 
+    // https://programmers.co.kr/learn/courses/30/lessons/42578?language=kotlin
     fun solution(clothes: Array<Array<String>>): Int {
         var answer = 1
 
@@ -14,6 +15,7 @@ class HashLevel2Clothes {
         }
 
         /*
+         * https://youngest-programming.tistory.com/296
          * 각 종류의 옷은 하나를 입거나, 입지 않는 선택지가 있기 때문에 옷의 개수에 선택지 1개를 추가한다.
          * 또한 옷을 고르는 선택은 동시에 일어나는 일이기 때문에, 각 옷들을 곱해 경우의 수를 계산한다.
          * 이때, 하나도 안입은 선택지는 없으므로 경우의 수 하나를 뺀다.

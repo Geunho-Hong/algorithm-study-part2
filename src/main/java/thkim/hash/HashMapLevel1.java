@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 public class HashMapLevel1 {
 
+    // https://programmers.co.kr/learn/courses/30/lessons/42576
     public String solution(String[] participant, String[] completion) {
         String answer = "";
 

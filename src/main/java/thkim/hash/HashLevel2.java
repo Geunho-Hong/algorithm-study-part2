@@ -5,6 +5,7 @@ import java.util.HashMap;
 
 public class HashLevel2 {
 
+    // https://programmers.co.kr/learn/courses/30/lessons/42577
     public boolean solution(String[] phone_book) {
         boolean answer = true;
         Arrays.sort(phone_book);

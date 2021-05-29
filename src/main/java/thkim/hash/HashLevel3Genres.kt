@@ -2,6 +2,7 @@ package thkim.hash
 
 class HashLevel3Genres {
 
+    // https://programmers.co.kr/learn/courses/30/lessons/42579?language=kotlin
     fun solution(genres: Array<String>, plays: IntArray): IntArray {
         return genres.indices.groupBy { genres[it] } // { classic = [0, 2, 3], pop = [1, 4]} (Map 형태로 변환)
             .toList() // [(classic, [0,2,3]),(pop,[1,4])] Type : List<Pair<String, Int>> (List로 변환)
