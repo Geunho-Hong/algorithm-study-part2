@@ -1,4 +1,4 @@
-package min.hashmap;
+package min.hash;
 
 import java.util.HashMap;
 import java.util.Map;

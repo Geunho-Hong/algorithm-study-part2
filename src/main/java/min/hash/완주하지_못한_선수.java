@@ -1,4 +1,4 @@
-package min.hashmap;
+package min.hash;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,6 +14,7 @@ public class 완주하지_못한_선수 {
         String result = solution.solution(participant, completion);
         System.out.println("result = " + result);
     }
+
 
     static class Solution {
 
