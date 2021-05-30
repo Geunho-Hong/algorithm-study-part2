@@ -16,9 +16,15 @@
 - https://programmers.co.kr/learn/courses/30/lessons/42578
 - https://programmers.co.kr/learn/courses/30/lessons/42579
 
-스택/큐
+스택
+- 
+
+
+큐
+
 
 링크드 리스트
+
 
 트리
 - 간단하게 트리 탐색문제가 많다. (트리에서 DFS/BFS)
@@ -33,6 +39,8 @@
 문자열
 
 정렬
+
+이분탐색
 
 완전탐색
 - 브루트포스 (Brute Force)
@@ -49,8 +57,6 @@
 - 트리 DP (DP 개념을 트리 자료구조에 적용)
 
 그리디
-
-이분탐색
 
 다익스트라
 
