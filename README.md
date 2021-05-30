@@ -23,6 +23,7 @@
 트리
 - 간단하게 트리 탐색문제가 많다. (트리에서 DFS/BFS)
 - 여기서 더 나아가면 DP 적용해야 하는 문제들 (여기까지만 할 줄 알아도 충분)
+- Binary Search Tree, Self Balanced Binary Search Tree
 
 그래프
 
