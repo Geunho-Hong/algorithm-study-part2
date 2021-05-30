@@ -17,8 +17,10 @@
 - https://programmers.co.kr/learn/courses/30/lessons/42579
 
 스택
-- 
-
+- https://leetcode.com/problems/make-the-string-great/
+- https://leetcode.com/problems/valid-parentheses/
+- https://leetcode.com/problems/next-greater-element-ii/
+- https://leetcode.com/problems/next-greater-node-in-linked-list/
 
 큐
 
