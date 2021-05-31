@@ -31,28 +31,4 @@ public class HashExample {
         System.out.println("MainThead end!!");
     }
 
-    static class TestVO {
-        private String name;
-        private Integer age;
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (!(o instanceof TestVO)) return false;
-
-            TestVO testVO = (TestVO) o;
-
-            if (!name.equals(testVO.name)) return false;
-            return age.equals(testVO.age);
-        }
-
-        @Override
-        public int hashCode() {
-            int result = name.hashCode();
-            result = 31 * result + age.hashCode();
-            return result;
-        }
-    }
-
-
 }
