@@ -16,13 +16,22 @@
 - https://programmers.co.kr/learn/courses/30/lessons/42578
 - https://programmers.co.kr/learn/courses/30/lessons/42579
 
-스택/큐
+스택
+- https://leetcode.com/problems/make-the-string-great/
+- https://leetcode.com/problems/valid-parentheses/
+- https://leetcode.com/problems/next-greater-element-ii/
+- https://leetcode.com/problems/next-greater-node-in-linked-list/
+
+큐
+
 
 링크드 리스트
+
 
 트리
 - 간단하게 트리 탐색문제가 많다. (트리에서 DFS/BFS)
 - 여기서 더 나아가면 DP 적용해야 하는 문제들 (여기까지만 할 줄 알아도 충분)
+- Binary Search Tree, Self Balanced Binary Search Tree
 
 그래프
 
@@ -32,6 +41,8 @@
 문자열
 
 정렬
+
+이분탐색
 
 완전탐색
 - 브루트포스 (Brute Force)
@@ -48,8 +59,6 @@
 - 트리 DP (DP 개념을 트리 자료구조에 적용)
 
 그리디
-
-이분탐색
 
 다익스트라
 
