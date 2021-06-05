@@ -15,12 +15,12 @@ public class ValidParentheses {
         for (char c : s.toCharArray()) {
             Bracket bracket = new Bracket(c);
 
-            // TODO 1. Stack 이 비어있는데 닫는 괄호 ? return false;
+            // 1. Stack 이 비어있는데 닫는 괄호 ? return false;
             if (bracketStack.isEmpty() && bracket.isClose()) {
                 return false; // 여는 괄호가 없는데 닫는 괄호가 나왔기 때문에 문법 오류
             }
 
-            // TODO 2. 닫는괄호가 나오면 Stack 을 peek()해서 같은 종류인지 비교 -> true? bracketStack.pop();, false? return false;
+            // 2. 닫는괄호가 나오면 Stack 을 peek()해서 같은 종류인지 비교 -> true? bracketStack.pop();, false? return false;
             if (bracket.isClose()) {
                 if (!bracketStack.peek().isPair(bracket)) { // 열/닫 괄호가 쌍이 아니기 때문에 문법 오류
                     return false;
@@ -31,7 +31,7 @@ public class ValidParentheses {
             }
         }
 
-        // TODO 3. 반복문 종료 후 Stack 이 비어있지 않으면? return false;
+        // 3. 반복문 종료 후 Stack 이 비어있지 않으면? return false;
         return bracketStack.isEmpty();
     }
 
