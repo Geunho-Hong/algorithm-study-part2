@@ -2,12 +2,9 @@ package min.stack;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
-
 import static min.stack.NextGreaterNodeInLinkedList.ListNode;
 import static min.stack.NextGreaterNodeInLinkedList.nextLargerNodes;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class NextGreaterNodeInLinkedListTest {
 
@@ -21,10 +18,8 @@ class NextGreaterNodeInLinkedListTest {
         // when
         int[] res = nextLargerNodes(head);
 
-        System.out.println("res = " + Arrays.toString(res));
-
         // then
-        assertTrue(Arrays.equals(new int[]{5, 5, 0}, res));
+        assertArrayEquals(new int[]{5, 5, 0}, res);
     }
 
     @Test
@@ -39,10 +34,8 @@ class NextGreaterNodeInLinkedListTest {
         // when
         int[] res = nextLargerNodes(head);
 
-        System.out.println("res = " + Arrays.toString(res));
-
         // then
-        assertTrue(Arrays.equals(new int[]{7, 0, 5, 5, 0}, res));
+        assertArrayEquals(new int[]{7, 0, 5, 5, 0}, res);
     }
 
 }
