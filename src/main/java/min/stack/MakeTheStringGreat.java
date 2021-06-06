@@ -11,15 +11,15 @@ public class MakeTheStringGreat {
     }
 
     public static String makeGood(String s) {
-        Stack<Character> stack = new Stack<>();
+        Stack<Character> stack = new Stack<>(); // l
         for (char c : s.toCharArray()) {
             if (stack.isEmpty()) {
                 stack.push(c);
                 continue;
             }
 
-            Character lastChar = stack.peek();
-            if (!lastChar.equals(c) && Math.abs(lastChar - c) == 32) {
+            Character lastChar = stack.peek(); // l ee
+            if (!lastChar.equals(c) && Math.abs(lastChar - c) == 32) { // A(65) - a(97) = 32
                 stack.pop();
                 continue;
             }
