@@ -23,7 +23,11 @@
 - https://leetcode.com/problems/next-greater-node-in-linked-list/
 
 큐
-
+- https://leetcode.com/problems/task-scheduler/
+- https://leetcode.com/problems/design-circular-queue/
+- https://leetcode.com/problems/binary-tree-right-side-view/
+- https://www.hackerrank.com/challenges/castle-on-the-grid/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=stacks-queues
+- https://www.hackerrank.com/challenges/largest-rectangle/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=stacks-queues
 
 링크드 리스트
 
