@@ -3,27 +3,43 @@
 
 [자료구조]
 
-배열
-- https://leetcode.com/problems/container-with-most-water/
-- https://leetcode.com/problems/search-insert-position/
-- https://leetcode.com/problems/maximum-subarray/
+<details>
+<summary>배열</summary>
+<div markdown="1">
+- https://leetcode.com/problems/container-with-most-water/ </br>
+- https://leetcode.com/problems/search-insert-position/ </br>
+- https://leetcode.com/problems/maximum-subarray/ </br>
 - https://leetcode.com/problems/combination-sum/
+</div>
+</details>
 
-해시맵
-- https://programmers.co.kr/learn/courses/30/parts/12077
-- https://programmers.co.kr/learn/courses/30/lessons/42576
-- https://programmers.co.kr/learn/courses/30/lessons/42577
-- https://programmers.co.kr/learn/courses/30/lessons/42578
+<details>
+<summary>해시</summary>
+<div markdown="1">
+- https://programmers.co.kr/learn/courses/30/parts/12077 </br>
+- https://programmers.co.kr/learn/courses/30/lessons/42576 </br>
+- https://programmers.co.kr/learn/courses/30/lessons/42577 </br>
+- https://programmers.co.kr/learn/courses/30/lessons/42578 </br>
 - https://programmers.co.kr/learn/courses/30/lessons/42579
+</div>
+</details>
 
-스택
-- https://leetcode.com/problems/make-the-string-great/
-- https://leetcode.com/problems/valid-parentheses/
-- https://leetcode.com/problems/next-greater-element-ii/
+<details>
+<summary>스택</summary>
+<div markdown="1">
+- https://leetcode.com/problems/make-the-string-great/ </br>
+- https://leetcode.com/problems/valid-parentheses/ </br>
+- https://leetcode.com/problems/next-greater-element-ii/ </br>
 - https://leetcode.com/problems/next-greater-node-in-linked-list/
+</div>
+</details>
 
 큐
-
+- https://leetcode.com/problems/task-scheduler/
+- https://leetcode.com/problems/design-circular-queue/
+- https://leetcode.com/problems/binary-tree-right-side-view/
+- https://www.hackerrank.com/challenges/castle-on-the-grid/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=stacks-queues
+- https://www.hackerrank.com/challenges/largest-rectangle/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=stacks-queues
 
 링크드 리스트
 
