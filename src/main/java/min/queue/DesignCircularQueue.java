@@ -2,20 +2,24 @@ package min.queue;
 
 public class DesignCircularQueue {
 
+    // https://leetcode.com/explore/learn/card/queue-stack/228/first-in-first-out-data-structure/1396/
     static class MyCircularQueue {
         private int[] elements;
         private int front;
         private int rear;
 
         public MyCircularQueue(int k) {
-            elements = new int[k + 1];
-            front = 0;
-            rear = 0;
+            elements = new int[k];
+            front = -1;
+            rear = -1;
         }
 
         public boolean enQueue(int value) {
             if (isFull())
                 return false;
+
+            if (front == -1)
+                front++;
 
             rear = (rear + 1) % elements.length;
             elements[rear] = value;
@@ -26,27 +30,28 @@ public class DesignCircularQueue {
             if (isEmpty())
                 return false;
 
-            front = (front + 1) % elements.length;
+            if (front == rear) {
+                front = -1;
+                rear = -1;
+            } else {
+                front = (front + 1) % elements.length;
+            }
+
             return true;
         }
 
         public int Front() {
-            if (isEmpty())
-                return -1;
-            return elements[(front + 1) % elements.length];
+            return isEmpty() ? -1 : elements[front];
         }
 
         public int Rear() {
-            if (isEmpty())
-                return -1;
-            return elements[rear];
+            return isEmpty() ? -1 : elements[rear];
         }
 
         public boolean isEmpty() {
-            return front == rear;
+            return front == -1 && front == rear;
         }
 
-        //
         public boolean isFull() {
             return (rear + 1) % elements.length == front;
         }
