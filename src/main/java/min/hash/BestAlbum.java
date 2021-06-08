@@ -4,7 +4,7 @@ import java.util.*;
 
 import static java.util.stream.Collectors.*;
 
-public class 베스트앨범 {
+public class BestAlbum {
 
     public static final int COUNT_GENRES_KIND = 100;
 

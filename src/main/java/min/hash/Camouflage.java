@@ -7,7 +7,7 @@ import java.util.Map;
 import static java.util.stream.Collectors.counting;
 import static java.util.stream.Collectors.groupingBy;
 
-public class 위장 {
+public class Camouflage {
     public static void main(String[] args) {
         String[][] clothes = {{"yellowhat", "headgear"}, {"bluesunglasses", "eyewear"}, {"green_turban", "headgear"}};
         int result = solution(clothes);

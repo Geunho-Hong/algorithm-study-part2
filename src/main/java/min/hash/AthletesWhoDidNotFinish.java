@@ -3,7 +3,7 @@ package min.hash;
 import java.util.HashMap;
 import java.util.Map;
 
-public class 완주하지_못한_선수 {
+public class AthletesWhoDidNotFinish {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
