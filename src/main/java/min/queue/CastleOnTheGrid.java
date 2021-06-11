@@ -15,9 +15,9 @@ import static java.util.stream.Collectors.toList;
 
 public class CastleOnTheGrid {
 
+    // .X. start(0,0) -> goal(0,2) = output(3)
+    // .X.
     // ...
-    // .X.
-    // .X.
     public static int minimumMoves(List<String> grid, int startX, int startY, int goalX, int goalY) {
         grid.forEach(System.out::println);
 
