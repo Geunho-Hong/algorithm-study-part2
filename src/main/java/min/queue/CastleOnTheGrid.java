@@ -143,7 +143,7 @@ public class CastleOnTheGrid {
 class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+//        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
         int n = Integer.parseInt(bufferedReader.readLine().trim());
 
@@ -166,11 +166,11 @@ class Solution {
         int result = CastleOnTheGrid.minimumMoves(grid, startX, startY, goalX, goalY);
         System.out.println("result = " + result);
 
-        bufferedWriter.write(String.valueOf(result));
-        bufferedWriter.newLine();
+//        bufferedWriter.write(String.valueOf(result));
+//        bufferedWriter.newLine();
 
         bufferedReader.close();
-        bufferedWriter.close();
+//        bufferedWriter.close();
     }
 
 }
