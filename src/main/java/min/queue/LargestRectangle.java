@@ -1,43 +1,76 @@
 package min.queue;
 
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
+import kotlin.coroutines.AbstractCoroutineContextKey;
+
+import java.io.IOException;
 import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
-import java.util.stream.*;
-import static java.util.stream.Collectors.joining;
-import static java.util.stream.Collectors.toList;
 
 public class LargestRectangle {
 
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-//        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+        Deque<Integer> stack = new ArrayDeque<>();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        stack.push(4);
+        stack.push(5);
 
-        int n = Integer.parseInt(bufferedReader.readLine().trim());
+        System.out.println("pop = " + stack.pop());
+        System.out.println("pop = " + stack.pop());
+        System.out.println("pop = " + stack.pop());
+        System.out.println("pop = " + stack.pop());
 
-        List<Integer> h = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-                .map(Integer::parseInt)
-                .collect(toList());
-
+        List<Integer> h = new ArrayList<>();
+        h.add(1);
+        h.add(2);
+        h.add(3);
+        h.add(4);
+        h.add(5);
         long result = largestRectangle(h);
-
-//        bufferedWriter.write(String.valueOf(result));
-//        bufferedWriter.newLine();
-
-
-        bufferedReader.close();
-//        bufferedWriter.close();
+        System.out.println("result = " + result);
     }
 
     public static long largestRectangle(List<Integer> h) {
+        Deque<Integer> stack = new ArrayDeque<>();
+        int largestArea = 0;
+        int i = 0;
 
+        while (i < h.size()) {
+            if (stack.isEmpty() || h.get(stack.peek()) < h.get(i)) {
+                stack.push(i);
+                i++;
+            } else {
+                int top = stack.pop();
+                int area;
 
-        return 0;
+                if (stack.isEmpty()) {
+                    area = h.get(top) * i;
+                } else {
+                    area = h.get(top) * (i - stack.peek() - 1);
+                }
+
+                if (largestArea < area) {
+                    largestArea = area;
+                }
+            }
+        }
+
+        while (!stack.isEmpty()) {
+            int top = stack.pop();
+            int area;
+
+            if (stack.isEmpty()) {
+                area = h.get(top) * i;
+            } else {
+                area = h.get(top) * (i - stack.peek() - 1);
+            }
+
+            if (largestArea < area) {
+                largestArea = area;
+            }
+        }
+
+        return largestArea;
     }
 
 }
