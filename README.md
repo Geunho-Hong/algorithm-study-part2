@@ -50,6 +50,8 @@
 - https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
 - https://leetcode.com/problems/linked-list-cycle/
 - https://leetcode.com/problems/linked-list-cycle-ii/
+- https://leetcode.com/problems/partition-list/
+- https://leetcode.com/problems/reorder-list/
 
 
 트리
