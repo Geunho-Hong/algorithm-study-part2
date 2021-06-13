@@ -34,14 +34,22 @@
 </div>
 </details>
 
-큐
-- https://leetcode.com/problems/task-scheduler/
-- https://leetcode.com/problems/design-circular-queue/
-- https://leetcode.com/problems/binary-tree-right-side-view/
-- https://www.hackerrank.com/challenges/castle-on-the-grid/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=stacks-queues
+<details>
+<summary>큐</summary>
+<div markdown="1">
+- https://leetcode.com/problems/task-scheduler/ </br>
+- https://leetcode.com/problems/design-circular-queue/ </br>
+- https://leetcode.com/problems/binary-tree-right-side-view/ </br>
+- https://www.hackerrank.com/challenges/castle-on-the-grid/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=stacks-queues </br>
 - https://www.hackerrank.com/challenges/largest-rectangle/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=stacks-queues
-
+</div>
+</details>
+  
 링크드 리스트
+- https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+- https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
+- https://leetcode.com/problems/linked-list-cycle/
+- https://leetcode.com/problems/linked-list-cycle-ii/
 
 
 트리
