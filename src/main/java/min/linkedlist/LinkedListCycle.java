@@ -8,10 +8,10 @@ public class LinkedListCycle {
     public static boolean hasCycle(ListNode head) {
         if (head == null || head.next == null) return false;
 
-        Set<ListNode> set = new HashSet<>();
+        Set<ListNode> nodeSet = new HashSet<>();
         while (head != null) {
-            set.add(head);
-            if (set.contains(head.next)) return true;
+            nodeSet.add(head);
+            if (nodeSet.contains(head.next)) return true;
             head = head.next;
         }
 
