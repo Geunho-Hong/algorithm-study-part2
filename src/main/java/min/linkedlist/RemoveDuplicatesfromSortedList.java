@@ -1,17 +1,25 @@
 package min.linkedlist;
 
-import java.util.LinkedList;
-
 public class RemoveDuplicatesfromSortedList {
 
-    public static void main(String[] args) {
-        LinkedList<Integer> list = new LinkedList<>();
-        list.add(0, 55);
-    }
+    public ListNode deleteDuplicates(ListNode head) {
+        if (head == null) return null;
+        else if (head.next == null) return head;
 
-    public static ListNode deleteDuplicates(ListNode head) {
+        ListNode front = head;
+        ListNode back = head.next;
 
-        return null;
+        while (back != null) {
+            if (front.val == back.val) {
+                back = back.next;
+                front.next = back;
+            } else {
+                front = front.next;
+                back = back.next;
+            }
+        }
+
+        return head;
     }
 
     static class ListNode {
