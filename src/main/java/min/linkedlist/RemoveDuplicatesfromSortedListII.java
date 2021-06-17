@@ -1,17 +1,17 @@
 package min.linkedlist;
 
-public class RemoveDuplicatesfromSortedList {
+public class RemoveDuplicatesfromSortedListII {
 
     public ListNode deleteDuplicates(ListNode head) {
-        if (head == null) return null;
+        if(head == null) return null;
 
         ListNode front = head;
         ListNode back = head.next;
 
         while (back != null) {
             if (front.val == back.val) {
-                back = back.next;
-                front.next = back;
+                front = back.next;
+                back = back.next.next;
             } else {
                 front = front.next;
                 back = back.next;
@@ -34,4 +34,5 @@ public class RemoveDuplicatesfromSortedList {
             this.next = next;
         }
     }
+
 }
