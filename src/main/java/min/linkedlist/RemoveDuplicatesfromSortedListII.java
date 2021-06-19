@@ -3,12 +3,10 @@ package min.linkedlist;
 public class RemoveDuplicatesfromSortedListII {
 
     public static void main(String[] args) {
-        ListNode ln5 = new ListNode(5);
-        ListNode ln4_2 = new ListNode(4, ln5);
-        ListNode ln4_1 = new ListNode(4, ln4_2);
-        ListNode ln3_2 = new ListNode(3, ln4_1);
-        ListNode ln3_1 = new ListNode(3, ln3_2);
-        ListNode ln2 = new ListNode(2, ln3_1);
+        ListNode ln4_1 = new ListNode(3, null);
+        ListNode ln3_2 = new ListNode(2, ln4_1);
+        ListNode ln3_1 = new ListNode(1, ln3_2);
+        ListNode ln2 = new ListNode(1, ln3_1);
         ListNode ln1 = new ListNode(1, ln2);
 
         ListNode listNode = deleteDuplicates(ln1);
@@ -16,23 +14,23 @@ public class RemoveDuplicatesfromSortedListII {
     }
 
     public static ListNode deleteDuplicates(ListNode head) {
-        if(head == null) return null;
+        if (head == null) return null;
 
-        ListNode connect = new ListNode(0);
-        ListNode front = head;
-        ListNode back = head.next;
+        ListNode C = new ListNode(0, head);
+        ListNode A = head;
 
-        connect.next = front;
-
-        while (back != null && back.next != null) {
-            if (front.val == back.val) {
-                front = front.next.next;
-                back = back.next.next;
-                connect.next = front;
+        while (A != null && A.next != null) {
+            if (A.val != A.next.val) {
+                C = A;
+                A = A.next;
             } else {
-                connect = front;
-                front = front.next;
-                back = back.next;
+                while (A.next != null && A.val == A.next.val) {
+                    if (A == head) head = A.next;
+                    A = A.next;
+                }
+                if (A == head) head = A.next;
+                A = A.next;
+                C.next = A;
             }
         }
 
