@@ -45,14 +45,17 @@
 </div>
 </details>
   
-링크드 리스트
-- https://leetcode.com/problems/remove-duplicates-from-sorted-list/
-- https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
-- https://leetcode.com/problems/linked-list-cycle/
-- https://leetcode.com/problems/linked-list-cycle-ii/
-- https://leetcode.com/problems/partition-list/
+<details>
+<summary>링크드 리스트</summary>
+<div markdown="1">
+  - https://leetcode.com/problems/remove-duplicates-from-sorted-list/ </br>
+- https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/ </br>
+- https://leetcode.com/problems/linked-list-cycle/ </br>
+- https://leetcode.com/problems/linked-list-cycle-ii/ </br>
+- https://leetcode.com/problems/partition-list/ </br>
 - https://leetcode.com/problems/reorder-list/
-
+</div>
+</details>
 
 트리
 - 간단하게 트리 탐색문제가 많다. (트리에서 DFS/BFS)
