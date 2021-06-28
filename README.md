@@ -63,6 +63,8 @@
 - Binary Search Tree, Self Balanced Binary Search Tree
 - https://leetcode.com/problems/binary-tree-inorder-traversal/
 - https://leetcode.com/problems/deepest-leaves-sum/
+- https://leetcode.com/problems/maximum-depth-of-binary-tree/
+- https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
 
 그래프
 
