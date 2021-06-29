@@ -53,9 +53,4 @@ public class TreeCustom {
             System.out.println(node.val);
         }
     }
-
-    public static void main(String[] args) {
-
-    }
-
 }
