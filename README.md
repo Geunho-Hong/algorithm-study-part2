@@ -65,6 +65,8 @@
 - https://leetcode.com/problems/deepest-leaves-sum/
 - https://leetcode.com/problems/maximum-depth-of-binary-tree/
 - https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+- https://leetcode.com/problems/validate-binary-search-tree/
+- https://leetcode.com/problems/count-complete-tree-nodes/
 
 그래프
 
