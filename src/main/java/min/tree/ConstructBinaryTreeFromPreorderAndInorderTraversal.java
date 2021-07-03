@@ -35,13 +35,4 @@ public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
         return root;
     }
 
-    public static void main(String[] args) {
-        int[] preorder = {1, 2};
-        int[] inorder = {2, 1};
-
-        TreeNode rootNode = buildTree(preorder, inorder);
-
-        System.out.println(rootNode.val);
-    }
-
 }
