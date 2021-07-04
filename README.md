@@ -57,7 +57,9 @@
 </div>
 </details>
 
-트리
+<details>
+<summary>트리</summary>
+<div markdown="1">
 - 간단하게 트리 탐색문제가 많다. (트리에서 DFS/BFS)
 - 여기서 더 나아가면 DP 적용해야 하는 문제들 (여기까지만 할 줄 알아도 충분)
 - Binary Search Tree, Self Balanced Binary Search Tree
@@ -67,9 +69,26 @@
 - https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
 - https://leetcode.com/problems/validate-binary-search-tree/
 - https://leetcode.com/problems/count-complete-tree-nodes/
+</div>
+</details>
 
 그래프
-
+(1주)
+BFS
+- https://www.acmicpc.net/problem/2667
+- https://www.acmicpc.net/problem/2178
+- https://www.acmicpc.net/problem/14502
+DFS
+- https://www.acmicpc.net/problem/2667
+- https://www.acmicpc.net/problem/2468
+(2주)
+BFS
+- https://www.acmicpc.net/problem/16236
+- https://www.acmicpc.net/problem/2146
+- https://www.acmicpc.net/problem/2638
+DFS
+- https://www.acmicpc.net/problem/1987
+- https://www.acmicpc.net/problem/16437
 
 [알고리즘]
 
@@ -82,10 +101,8 @@
 완전탐색
 - 브루트포스 (Brute Force)
 - 비트마스크 (Bitmask)
-- 재귀 함수 (Recursive)
 - 백트래킹 (Backtraking)
 - 수열 (Permutation)
-- BFS/DFS
 
 다이나믹 프로그래밍 (DP, 동적 계획법)
 - LIS
