@@ -48,7 +48,7 @@
 <details>
 <summary>링크드 리스트</summary>
 <div markdown="1">
-  - https://leetcode.com/problems/remove-duplicates-from-sorted-list/ </br>
+- https://leetcode.com/problems/remove-duplicates-from-sorted-list/ </br>
 - https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/ </br>
 - https://leetcode.com/problems/linked-list-cycle/ </br>
 - https://leetcode.com/problems/linked-list-cycle-ii/ </br>
@@ -60,14 +60,14 @@
 <details>
 <summary>트리</summary>
 <div markdown="1">
-- 간단하게 트리 탐색문제가 많다. (트리에서 DFS/BFS)
-- 여기서 더 나아가면 DP 적용해야 하는 문제들 (여기까지만 할 줄 알아도 충분)
-- Binary Search Tree, Self Balanced Binary Search Tree
-- https://leetcode.com/problems/binary-tree-inorder-traversal/
-- https://leetcode.com/problems/deepest-leaves-sum/
-- https://leetcode.com/problems/maximum-depth-of-binary-tree/
-- https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
-- https://leetcode.com/problems/validate-binary-search-tree/
+- 간단하게 트리 탐색문제가 많다. (트리에서 DFS/BFS) </br>
+- 여기서 더 나아가면 DP 적용해야 하는 문제들 (여기까지만 할 줄 알아도 충분) </br>
+- Binary Search Tree, Self Balanced Binary Search Tree </br>
+- https://leetcode.com/problems/binary-tree-inorder-traversal/ </br>
+- https://leetcode.com/problems/deepest-leaves-sum/ </br>
+- https://leetcode.com/problems/maximum-depth-of-binary-tree/ </br>
+- https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/ </br>
+- https://leetcode.com/problems/validate-binary-search-tree/ </br>
 - https://leetcode.com/problems/count-complete-tree-nodes/
 </div>
 </details>
