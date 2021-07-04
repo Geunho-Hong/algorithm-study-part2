@@ -72,20 +72,23 @@
 </div>
 </details>
 
-그래프
-(1주)
+그래프 </br>
+(1주) </br>
 BFS
 - https://www.acmicpc.net/problem/2667
 - https://www.acmicpc.net/problem/2178
-- https://www.acmicpc.net/problem/14502
+- https://www.acmicpc.net/problem/14502 </br>
+
 DFS
 - https://www.acmicpc.net/problem/2667
-- https://www.acmicpc.net/problem/2468
-(2주)
+- https://www.acmicpc.net/problem/2468 </br>
+
+(2주) </br>
 BFS
 - https://www.acmicpc.net/problem/16236
 - https://www.acmicpc.net/problem/2146
-- https://www.acmicpc.net/problem/2638
+- https://www.acmicpc.net/problem/2638 </br>
+
 DFS
 - https://www.acmicpc.net/problem/1987
 - https://www.acmicpc.net/problem/16437
