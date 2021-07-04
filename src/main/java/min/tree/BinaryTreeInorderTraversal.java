@@ -11,6 +11,7 @@ public class BinaryTreeInorderTraversal {
         return res;
     }
 
+    // left root right
     public void inorder(TreeNode node, List<Integer> res) {
         if (node != null) {
             inorder(node.left, res);
