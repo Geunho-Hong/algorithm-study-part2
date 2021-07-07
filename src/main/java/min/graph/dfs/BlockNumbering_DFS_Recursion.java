@@ -1,4 +1,4 @@
-package min.graph;
+package min.graph.dfs;
 
 import java.util.ArrayList;
 import java.util.Collections;
