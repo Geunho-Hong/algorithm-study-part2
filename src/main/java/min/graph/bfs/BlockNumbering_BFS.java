@@ -14,12 +14,12 @@ public class BlockNumbering_BFS {
         if (graph[x][y] == 0)
             return false;
 
-        Queue<Point> stack = new ArrayDeque<>();
-        stack.offer(new Point(x, y));
+        Queue<Point> queue = new ArrayDeque<>();
+        queue.offer(new Point(x, y));
         graph[x][y] = 0;
         count++;
-        while (!stack.isEmpty()) {
-            Point p = stack.poll();
+        while (!queue.isEmpty()) {
+            Point p = queue.poll();
             for (int i = 0; i < 4; i++) {
                 int nx = p.x + mx[i];
                 int ny = p.y + my[i];
@@ -28,7 +28,7 @@ public class BlockNumbering_BFS {
                     continue;
 
                 if (graph[nx][ny] == 1) {
-                    stack.offer(new Point(nx, ny));
+                    queue.offer(new Point(nx, ny));
                     graph[nx][ny] = 0;
                     count++;
                 }
