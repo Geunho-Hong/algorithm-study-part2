@@ -1,5 +1,5 @@
-# algorithm-study
-알고리즘 스터디 since 21.05.16
+# Algorithm
+since 21.05.16
 
 [자료구조]
 
