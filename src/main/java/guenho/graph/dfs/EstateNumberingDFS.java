@@ -1,4 +1,4 @@
-package guenho.graph;
+package guenho.graph.dfs;
 
 // 관련 URL : https://www.acmicpc.net/problem/2667
 // DFS (Depth-find Search) : Stack or Recursion
@@ -26,9 +26,11 @@ public class EstateNumberingDFS {
             int nX = dx[i] + x;     // 다음 x 좌표
             int nY = dy[i] + y;     // 다음 y 좌표
 
-            if (graph[nX][nY] == 1 && visited[nX][nY] == false) {
+            if (nX>=0 && nY >=0 && nX < N && nY < N) {
                 // 그래프가 연결되어있고, 방문하지 않았다면
-                if (nX >= 0 && nY >= 0 && nX < N && nY < N) {
+                // 1. 좌표 범위를 벗어나지 않아야 한다
+                // 2. 방문하지 않아야 한다
+                if (graph[nX][nY] == 1 && visited[nX][nY] == false) {
                     // 상,하,좌,우 네 방향을 돌며, 좌표가 그래프 범위 안에 있으면 DFS 방문 처리
                     dfs(nX, nY);
                     visited[nX][nY] = true;
@@ -50,12 +52,18 @@ public class EstateNumberingDFS {
         graph = new int[N][N];
         visited = new boolean[N][N];
 
-
         for (int i = 0; i < N; i++) {
             String[] mapRow = br.readLine().split("");
             for (int j = 0; j < mapRow.length; j++) {
                 graph[i][j] = Integer.parseInt(mapRow[j]);
             }
+        }
+
+        for(int i= 0; i<N ; i++) {
+            for(int j=0; j<N; j++) {
+                System.out.print(graph[i][j]);
+            }
+            System.out.println();
         }
 
         int answer = 0;
