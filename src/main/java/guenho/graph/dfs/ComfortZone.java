@@ -54,10 +54,13 @@ public class ComfortZone {
             }
         }
 
+        int min = Collections.min(heights);
         int max = Collections.max(heights);
 
+        //TODO: 1이 의미하는건, 아무것도 잠기지 않을 경우 1 추가
+
         // 높이가 안 잠길 수 있기 떄문에 0으로 표현
-        for(int i = 0;  i <max; i ++) {
+        for(int i = min;  i < max; i ++) {
 
             H = i;
 
@@ -83,9 +86,11 @@ public class ComfortZone {
                 }
             }
 
+            // answerList add : 1 ( 1이 물이 잠기지 않을 경우)
             answerList.add(cnt);
 
         }
+        answerList.add(1);  // 물에 잠기지 않을 경우를 list.add 해준다
 
         System.out.print(Collections.max(answerList));
 
