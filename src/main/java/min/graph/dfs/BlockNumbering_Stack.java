@@ -2,7 +2,7 @@ package min.graph.dfs;
 
 import java.util.*;
 
-public class BlockNumbering_DFS_Stack {
+public class BlockNumbering_Stack {
 
     static int n;
     static int[][] graph;

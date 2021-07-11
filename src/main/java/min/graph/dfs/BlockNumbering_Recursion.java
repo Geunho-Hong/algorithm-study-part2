@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class BlockNumbering_DFS_Recursion {
+public class BlockNumbering_Recursion {
 
     static int n;
     static int[][] graph;
