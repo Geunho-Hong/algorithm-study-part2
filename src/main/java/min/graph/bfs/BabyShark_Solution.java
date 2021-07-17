@@ -8,8 +8,8 @@ public class BabyShark_Solution {
 
     static int n; // 수족관 크기 n * n
 
-    static BabyShark babyShark; // 아기 상어
-    static int[][] aquarium; // 수족관
+    static BabyShark babyShark;
+    static int[][] aquarium;
 
     static int[] bx = {-1, 1, 0, 0}; // 상하
     static int[] by = {0, 0, -1, 1}; // 좌우
@@ -19,6 +19,7 @@ public class BabyShark_Solution {
         Queue<Point> queue = new ArrayDeque<>();
         queue.offer(new Point(babyShark.x, babyShark.y, 0));
 
+        // 물고기를 한번 찾았더라도 다음 물고기를 찾아야하므로 방문 기록을 초기화 되어야함
         boolean[][] visited = new boolean[n][n];
         visited[babyShark.x][babyShark.y] = true;
 
@@ -41,12 +42,12 @@ public class BabyShark_Solution {
                 if (visited[nx][ny] || !babyShark.isMove(aquarium[nx][ny]))
                     continue;
 
-                // 먹을 수 있는 물고기의 위치를 찾는다.
+                // 먹을 수 있는 물고기의 위치와 거리를 계산한다.
                 queue.offer(new Point(nx, ny, current.distance + 1));
                 visited[nx][ny] = true;
 
                 if (babyShark.isEatFish(aquarium[nx][ny])) {
-                    // 현재 먹을 수 있는 물고기와 아기 상어의 거리
+                    // 아기 상어와 먹을 수 있는 물고기의 거리
                     int fishDistance = current.distance + 1;
 
                     if (minDistance > fishDistance) { // 최단 거리 물고기로 위치 갱신
@@ -69,13 +70,13 @@ public class BabyShark_Solution {
         if (minX == -1) // 먹을 수 있는 물고기가 없으면 종료
             return true;
 
-        // 수족관 내에서 상어 이동
+        // 수족관 내에서 물고기가 있던 자리로 상어 이동
         aquarium[minX][minY] = 9;
         // 원래 상어가 있던 자리 빈공간으로 변경
         aquarium[babyShark.x][babyShark.y] = 0;
         // 경험치 쌓기
         babyShark.eatFish();
-        // 이동 한 시간 누적
+        // 이동 (시간 축적 시키기)
         babyShark.move(minDistance, minX, minY);
 
         return false;
@@ -96,9 +97,8 @@ public class BabyShark_Solution {
             }
         }
 
-        while (true) {
+        while (true)
             if (bfs()) break;
-        }
 
         System.out.println(babyShark.moveTime);
     }
@@ -121,8 +121,8 @@ public class BabyShark_Solution {
         }
 
         // 아기 상어는 자신의 크기와 같거나 작은 곳만 이동할 수 있음
-        public boolean isMove(int size) {
-            return this.size >= size;
+        public boolean isMove(int fishSize) {
+            return this.size >= fishSize;
         }
 
         // 아기 상어 이동 시 1초가 걸린다.
