@@ -86,12 +86,10 @@ DFS
 (2주) </br>
 BFS
 - https://www.acmicpc.net/problem/16236
-- https://www.acmicpc.net/problem/2146
 - https://www.acmicpc.net/problem/2638 </br>
 
 DFS
 - https://www.acmicpc.net/problem/1987
-- https://www.acmicpc.net/problem/16437
 
 [알고리즘]
 

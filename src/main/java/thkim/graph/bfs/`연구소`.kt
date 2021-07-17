@@ -1,4 +1,4 @@
-package thkim.dfs_bfs
+package thkim.graph.bfs
 
 import java.io.BufferedReader
 import java.io.InputStreamReader

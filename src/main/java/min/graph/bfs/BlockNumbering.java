@@ -2,7 +2,7 @@ package min.graph.bfs;
 
 import java.util.*;
 
-public class BlockNumbering_BFS {
+public class BlockNumbering {
 
     static int n;
     static int[][] graph;
