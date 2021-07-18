@@ -72,7 +72,10 @@ since 21.05.16
 </div>
 </details>
 
-그래프 </br>
+
+<details>
+<summary>그래프</summary>
+<div markdown="1">
 (1주) </br>
 BFS
 - https://www.acmicpc.net/problem/2667
@@ -90,6 +93,16 @@ BFS
 
 DFS
 - https://www.acmicpc.net/problem/1987
+(3주) </br>
+BFS
+- https://www.acmicpc.net/problem/2146 </br>
+
+DFS
+- https://www.acmicpc.net/problem/10026
+- https://www.acmicpc.net/problem/16437 </br>
+
+</div>
+</details>
 
 [알고리즘]
 
