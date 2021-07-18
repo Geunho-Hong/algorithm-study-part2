@@ -33,11 +33,11 @@ public class Cheese {
             // 0이면 2로 변경
             findRoomTemperature();
 
-            // 1이면 4면 검사 후 2면 이상이 실온이면 9로 변경
+            // 1이면 네개의 면 검사 후 두개의 면 이상이 실온이면 9로 변경
             findMeltingCheese();
 
             // 치즈 제거
-            if (meltingCheese())
+            if (meltCheese())
                 break;
 
             // 시간 + 1
@@ -92,7 +92,7 @@ public class Cheese {
         }
     }
 
-    static boolean meltingCheese() {
+    static boolean meltCheese() {
         boolean flag = true;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
