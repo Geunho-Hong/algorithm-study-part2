@@ -28,7 +28,7 @@ public class alphabet {
 
         // 방문 처리
         visited[alphaMap[x][y] - 'A'] = true;
-        //System.out.println("dfs init");
+        System.out.println("dfs init : " + x + "," + y);
 
         for(int i = 0; i < 4; i ++) {
             int nX = dx[i] + x;
@@ -38,7 +38,9 @@ public class alphabet {
                     // 방문 처리
                     dfs(nX,nY,depth + 1);
                     // 방문 처리 제거
-                    // System.out.println("dfs fin");
+
+                    // bfs가 종료 될 때 밑에 로직을 탄다.
+                    //System.out.println("dfs fin : " + nX + "," +  nY);
                     visited[alphaMap[nX][nY] - 'A'] = false;
                 }
             }

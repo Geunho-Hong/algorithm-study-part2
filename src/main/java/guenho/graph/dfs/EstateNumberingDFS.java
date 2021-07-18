@@ -32,12 +32,14 @@ public class EstateNumberingDFS {
                 // 2. 방문하지 않아야 한다
                 if (graph[nX][nY] == 1 && visited[nX][nY] == false) {
                     // 상,하,좌,우 네 방향을 돌며, 좌표가 그래프 범위 안에 있으면 DFS 방문 처리
+                    System.out.println("현재 : " + x + "," + y);
+                    System.out.println("다음 : " + nX + "," + nY);
                     dfs(nX, nY);
-                    visited[nX][nY] = true;
+                    // dfs가 종료 될 때 밑에 로직을 탄다
                     cnt++;
+                    System.out.println("cnt :" + cnt);
                 }
             }
-
         }
         return cnt;
     }

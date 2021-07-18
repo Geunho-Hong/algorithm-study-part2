@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.PriorityQueue;
 import java.util.Queue;
-import java.util.StringTokenizer;
 
 public class BabyShark2 {
     static int n;
@@ -14,7 +13,6 @@ public class BabyShark2 {
     static int sharkSize = 2;
     static int eatCnt;
 
-    // 상좌우하 dy dx
     static int[] dy = {-1, 0, 0, 1};
     static int[] dx = {0, -1, 1, 0};
     static int answer;
@@ -80,7 +78,7 @@ public class BabyShark2 {
         while (!q.isEmpty()) {
             Pos curPos = q.poll(); // 상어의 현재 위치
 
-            for (int i = 0; i <= 3; i++) {
+            for (int i = 0; i < 4; i++) {
                 int moveY = curPos.y + dy[i];
                 int moveX = curPos.x + dx[i];
                 if (!(moveY < n && moveX < n && moveY >= 0 && moveX >= 0)) continue;
