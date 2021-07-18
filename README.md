@@ -72,7 +72,6 @@ since 21.05.16
 </div>
 </details>
 
-
 <details>
 <summary>그래프</summary>
 <div markdown="1">
@@ -106,17 +105,17 @@ DFS
 
 [알고리즘]
 
-문자열
-
-정렬
-
-이분탐색
-
 완전탐색
 - 브루트포스 (Brute Force)
 - 비트마스크 (Bitmask)
 - 백트래킹 (Backtraking)
 - 수열 (Permutation)
+
+문자열
+
+정렬
+
+이분탐색
 
 다이나믹 프로그래밍 (DP, 동적 계획법)
 - LIS
