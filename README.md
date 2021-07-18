@@ -76,9 +76,9 @@ since 21.05.16
 <summary>그래프</summary>
 <div markdown="1">
 (1주) </br>
-BFS
-- https://www.acmicpc.net/problem/2667
-- https://www.acmicpc.net/problem/2178
+BFS </br>
+- https://www.acmicpc.net/problem/2667 </br>
+- https://www.acmicpc.net/problem/2178 </br>
 - https://www.acmicpc.net/problem/14502 </br>
 
 DFS
