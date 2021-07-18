@@ -77,7 +77,7 @@ public class BabyShark_Solution {
         // 경험치 쌓기
         babyShark.eatFish();
         // 이동 (시간 축적 시키기)
-        babyShark.move(minDistance, minX, minY);
+        babyShark.move(minDistance, minX, minY); // 먹으면 종료 된다.
 
         return false;
     }

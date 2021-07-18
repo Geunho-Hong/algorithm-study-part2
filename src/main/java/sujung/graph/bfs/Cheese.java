@@ -3,30 +3,60 @@ package sujung.graph.bfs;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 import static java.lang.System.in;
 
-public class Cheeze {
+public class Cheese {
 
     private static int N, M;
     private static int[][] map;
+    private static int[][] visited;
     private static int[] dx = {0, 0, 1, -1};
     private static int[] dy = {1, -1, 0, 0};
+    private static int count = 0;
 
     public static void main(String[] args) throws IOException {
         try (BufferedReader br = new BufferedReader(new InputStreamReader(in))) {
             initMap(br);
 
-            // 치즈가 다 없어지는 시간은?
-            // 1인데 상하좌우에 0이 두개이상인 놈을 큐에 담는다
-            // 갇혀있는 빈 공간은 0으로 채우지 않는다.
-            // 방문했으면 2
+            int time = 0;
+            while (count > 0) {
+                bfs();
+                time++;
+            }
 
-            // 큐에 있는 놈을 돌리면서
-            // 근접한 1인 애의 상하좌우가 0이 2개 이상이면
-            // 큐애 넣는다.
+            System.out.println(time);
+        }
+    }
 
+    private static void bfs() {
+        // Spread air -> Count cheese to be melted
+        visited = new int[N][M];
 
+        Deque<Point> queue = new ArrayDeque<>();
+        queue.offer(new Point(0, 0));
+        visited[0][0] = 1;
+
+        while (!queue.isEmpty()) {
+            Point cur = queue.poll();
+            for (int k = 0; k < 4; k++) {
+                int nx = cur.x + dx[k];
+                int ny = cur.y + dy[k];
+                if (nx < 0 || ny < 0 || nx >= N || ny >= M) continue;
+
+                if (map[nx][ny] == 0 && visited[nx][ny] == 0) {  // Air
+                    queue.offer(new Point(nx, ny));
+                    visited[nx][ny] = 1;
+                } else if (map[nx][ny] == 1) {                  // Cheese
+                    visited[nx][ny]++;
+                    if (visited[nx][ny] >= 2) {                 // Being melted
+                        map[nx][ny] = 0;
+                        count--;
+                    }
+                }
+            }
         }
     }
 
@@ -39,9 +69,10 @@ public class Cheeze {
             String[] temp = br.readLine().split(" ");
             for (int j = 0; j < M; j++) {
                 map[i][j] = Integer.parseInt(temp[j]);
-                // count cheeze cell
-                if(map[i][j] == 1) {
-                    
+
+                // Count Cheese
+                if (map[i][j] == 1) {
+                    count++;
                 }
             }
         }
