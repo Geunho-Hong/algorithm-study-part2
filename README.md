@@ -92,7 +92,8 @@ BFS
 - https://www.acmicpc.net/problem/2638 </br>
 
 DFS
-- https://www.acmicpc.net/problem/1987
+- https://www.acmicpc.net/problem/1987 </br>
+
 (3주) </br>
 BFS
 - https://www.acmicpc.net/problem/2146 </br>
@@ -100,7 +101,6 @@ BFS
 DFS
 - https://www.acmicpc.net/problem/10026
 - https://www.acmicpc.net/problem/16437 </br>
-
 </div>
 </details>
 
