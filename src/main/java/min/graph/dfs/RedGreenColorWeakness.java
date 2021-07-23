@@ -1,4 +1,4 @@
-package min.graph.bfs;
+package min.graph.dfs;
 
 import java.io.BufferedReader;
 import java.io.IOException;
