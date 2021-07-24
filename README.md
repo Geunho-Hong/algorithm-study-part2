@@ -30,7 +30,7 @@ since 21.05.16
 - https://leetcode.com/problems/make-the-string-great/ </br>
 - https://leetcode.com/problems/valid-parentheses/ </br>
 - https://leetcode.com/problems/next-greater-element-ii/ </br>
-- https://leetcode.com/problems/next-greater-node-in-linked-list/
+- https://leetcode.com/problems/next-greater-island-in-linked-list/
 </div>
 </details>
 
