@@ -24,6 +24,7 @@ public class RedGreenMadicine {
         }
     }
 
+
     public static void redGreenBfs(int x, int y) {
 
         visited[x][y] = true;
@@ -99,6 +100,7 @@ public class RedGreenMadicine {
                 }
             }
         }
+
         System.out.println(cnt + " " + redGreenCnt);
     }
 }
