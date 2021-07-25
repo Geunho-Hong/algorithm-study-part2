@@ -105,11 +105,15 @@ DFS
 
 [알고리즘]
 
-완전탐색
-- 브루트포스 (Brute Force)
-- 비트마스크 (Bitmask)
-- 백트래킹 (Backtraking)
-- 수열 (Permutation)
+
+브루트포스 (Brute Force)
+수열 (Permutation)
+비트마스크 (Bitmask)
+백트래킹 (Backtraking)
+- https://www.acmicpc.net/problem/10819
+- https://www.acmicpc.net/problem/2798
+- https://www.acmicpc.net/problem/14889
+- https://www.acmicpc.net/problem/15649 (N과 M 1 ~ 12번)
 
 문자열
 
