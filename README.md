@@ -106,14 +106,13 @@ DFS
 [알고리즘]
 
 
-브루트포스 (Brute Force)
-수열 (Permutation)
-비트마스크 (Bitmask)
-백트래킹 (Backtraking)
+브루트포스 (Brute Force) </br>
+수열 (Permutation) </br>
+비트마스크 (Bitmask) </br>
+백트래킹 (Backtraking) </br>
 - https://www.acmicpc.net/problem/10819
-- https://www.acmicpc.net/problem/2798
-- https://www.acmicpc.net/problem/14889
 - https://www.acmicpc.net/problem/15649 (N과 M 1 ~ 12번)
+- https://programmers.co.kr/learn/courses/30/parts/12230 (선택)
 
 문자열
 
