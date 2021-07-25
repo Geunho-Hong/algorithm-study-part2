@@ -12,7 +12,6 @@ public class SheepRescueOperation {
 
     static int[] sheepAmounts;
     static List<Integer>[] edgeList;
-    static boolean[] visited;
 
     public static void main(String[] args) throws IOException {
         init();
@@ -24,11 +23,8 @@ public class SheepRescueOperation {
         if (edgeList[no].isEmpty())
             return Math.max(sheepAmounts[no], 0);
 
-        visited[no] = true;
-
         long sumAmount = sheepAmounts[no];
         for (int next : edgeList[no]) {
-            if (visited[next]) continue;
             sumAmount += dfs(next);
         }
 
@@ -41,7 +37,6 @@ public class SheepRescueOperation {
 
             sheepAmounts = new int[n + 1];
             edgeList = new ArrayList[n + 1];
-            visited = new boolean[n + 1];
 
             for (int i = 1; i <= n; i++) {
                 edgeList[i] = new ArrayList<>();
