@@ -72,11 +72,13 @@ since 21.05.16
 </div>
 </details>
 
-그래프 </br>
+<details>
+<summary>그래프</summary>
+<div markdown="1">
 (1주) </br>
-BFS
-- https://www.acmicpc.net/problem/2667
-- https://www.acmicpc.net/problem/2178
+BFS </br>
+- https://www.acmicpc.net/problem/2667 </br>
+- https://www.acmicpc.net/problem/2178 </br>
 - https://www.acmicpc.net/problem/14502 </br>
 
 DFS
@@ -89,21 +91,34 @@ BFS
 - https://www.acmicpc.net/problem/2638 </br>
 
 DFS
-- https://www.acmicpc.net/problem/1987
+- https://www.acmicpc.net/problem/1987 </br>
+
+(3주) </br>
+BFS
+- https://www.acmicpc.net/problem/2146 </br>
+
+DFS
+- https://www.acmicpc.net/problem/10026
+- https://www.acmicpc.net/problem/16437 </br>
+</div>
+</details>
 
 [알고리즘]
+
+
+브루트포스 (Brute Force) </br>
+수열 (Permutation) </br>
+비트마스크 (Bitmask) </br>
+백트래킹 (Backtraking) </br>
+- https://www.acmicpc.net/problem/10819
+- https://www.acmicpc.net/problem/15649 (N과 M 1 ~ 12번)
+- https://programmers.co.kr/learn/courses/30/parts/12230 (선택)
 
 문자열
 
 정렬
 
 이분탐색
-
-완전탐색
-- 브루트포스 (Brute Force)
-- 비트마스크 (Bitmask)
-- 백트래킹 (Backtraking)
-- 수열 (Permutation)
 
 다이나믹 프로그래밍 (DP, 동적 계획법)
 - LIS
