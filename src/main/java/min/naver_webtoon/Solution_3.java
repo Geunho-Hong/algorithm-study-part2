@@ -1,4 +1,4 @@
-package min.naverwebtoon;
+package min.naver_webtoon;
 
 public class Solution_3 {
 

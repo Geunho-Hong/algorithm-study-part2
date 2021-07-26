@@ -1,4 +1,4 @@
-package min.naverwebtoon;
+package min.naver_webtoon;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;

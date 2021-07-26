@@ -11,7 +11,7 @@ public class BuildBridge {
 
     static int n;
 
-    static int[][] country;
+    static int[][] map;
     static boolean[][] visited;
 
     static int minBridgeCount = Integer.MAX_VALUE;
@@ -33,9 +33,9 @@ public class BuildBridge {
     static void buildBridge() {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                if (country[i][j] != 0) {
+                if (map[i][j] != 0) {
                     initVisited();
-                    bfs(i, j, country[i][j]);
+                    bfs(i, j, map[i][j]);
                 }
             }
         }
@@ -62,7 +62,7 @@ public class BuildBridge {
                 if (nx < 0 || nx >= n || ny < 0 || ny >= n) continue;
                 if (visited[nx][ny]) continue;
 
-                if (country[nx][ny] != 0 && country[nx][ny] != islandNumber) {
+                if (map[nx][ny] != 0 && map[nx][ny] != islandNumber) {
                     minBridgeCount = Math.min(minBridgeCount, current.distance);
                     // 가장 가까운 다른 섬을 찾았으면 더이상 bfs를 돌 필요가 없다.
                     return;
@@ -80,7 +80,7 @@ public class BuildBridge {
         int number = 1;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                if (country[i][j] == 1 && !visited[i][j]) {
+                if (map[i][j] == 1 && !visited[i][j]) {
                     dfs(i, j, number++);
                 }
             }
@@ -88,7 +88,7 @@ public class BuildBridge {
     }
 
     static void dfs(int x, int y, int number) {
-        country[x][y] = number;
+        map[x][y] = number;
         visited[x][y] = true;
 
         for (int i = 0; i < 4; i++) {
@@ -96,7 +96,7 @@ public class BuildBridge {
             int ny = y + dy[i];
 
             if (nx < 0 || nx >= n || ny < 0 || ny >= n) continue;
-            if (country[nx][ny] == 0 || visited[nx][ny]) continue;
+            if (map[nx][ny] == 0 || visited[nx][ny]) continue;
 
             dfs(nx, ny, number);
         }
@@ -105,12 +105,12 @@ public class BuildBridge {
     static void initMap() throws IOException {
         try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
             n = Integer.parseInt(br.readLine());
-            country = new int[n][n];
+            map = new int[n][n];
 
             for (int i = 0; i < n; i++) {
                 String[] arr = br.readLine().split(" ");
                 for (int j = 0; j < n; j++) {
-                    country[i][j] = Integer.parseInt(arr[j]);
+                    map[i][j] = Integer.parseInt(arr[j]);
                 }
             }
         }

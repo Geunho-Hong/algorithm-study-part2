@@ -9,9 +9,9 @@ public class RedGreenColorWeakness {
     static int n;
 
     static char[][] normalDrawing;
-    static char[][] weaknessDrawing;
-
     static boolean[][] normalVisited;
+
+    static char[][] weaknessDrawing;
     static boolean[][] weaknessVisited;
 
     static int[] dx = {-1, 1, 0, 0};
