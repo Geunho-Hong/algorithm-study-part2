@@ -1,4 +1,4 @@
-package min.exhaustive_search;
+package min.exhaustive_search.week1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
