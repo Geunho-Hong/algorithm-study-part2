@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Permutation {
 
-    static int n = 4;
-
+    static int n = 6;
+    static int count;
     static List<Integer> list;
 
     public static void main(String[] args) {
@@ -15,13 +15,15 @@ public class Permutation {
         list.add(2);
         list.add(3);
         list.add(4);
+        list.add(5);
+        list.add(6);
 
         permutation(0);
     }
 
     static void permutation(int k) {
         if (k == n) {
-            System.out.println(list);
+            System.out.println(list + " " + ++count);
         } else {
             for (int i = k; i < n; i++) {
                 swap(k, i);
