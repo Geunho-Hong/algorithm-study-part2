@@ -110,9 +110,14 @@ DFS
 수열 (Permutation) </br>
 비트마스크 (Bitmask) </br>
 백트래킹 (Backtraking) </br>
-- https://www.acmicpc.net/problem/10819
-- https://www.acmicpc.net/problem/15649 (N과 M 1 ~ 12번)
+<details>
+<summary>1주차</summary>
+<div markdown="1">
+- https://www.acmicpc.net/problem/10819 </br>
+- https://www.acmicpc.net/workbook/view/2052 (N과 M 1 ~ 12번) </br>
 - https://programmers.co.kr/learn/courses/30/parts/12230 (선택)
+</div>
+</details>
 
 문자열
 
