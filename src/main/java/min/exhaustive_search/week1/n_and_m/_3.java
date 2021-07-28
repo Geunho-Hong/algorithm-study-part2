@@ -4,13 +4,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class _2 {
+public class _3 {
 
     static int n;
     static int m;
 
     static int[] arr;
-    static boolean[] visit;
 
     static StringBuilder sb = new StringBuilder();
 
@@ -28,14 +27,8 @@ public class _2 {
         }
 
         for (int i = 0; i < n; i++) {
-            if (visit[i]) continue;
-            // 완성된 수열은 오름차순이어야 하기 때문에 다음에 나올 값이 이전 값보다 작으면 가지치기
-            if (depth > 0 && arr[depth - 1] > i + 1) continue;
-
-            visit[i] = true;
             arr[depth] = i + 1;
             dfs(depth + 1);
-            visit[i] = false;
         }
     }
 
@@ -46,7 +39,6 @@ public class _2 {
             m = Integer.parseInt(inputArr[1]);
 
             arr = new int[m];
-            visit = new boolean[n];
         }
     }
 

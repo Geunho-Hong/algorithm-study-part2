@@ -17,24 +17,24 @@ public class _1 {
     public static void main(String[] args) throws IOException {
         init();
         dfs(0);
+        System.out.println(sb);
     }
 
     static void dfs(int depth) {
         if (depth == m) {
             for (int i : arr)
                 sb.append(i).append(" ");
-            System.out.println(sb.toString());
-            sb.delete(0, sb.length());
+            sb.append("\n");
             return;
         }
 
         for (int i = 0; i < n; i++) {
-            if (!visit[i]) {
-                visit[i] = true;
-                arr[depth] = i + 1;
-                dfs(depth + 1);
-                visit[i] = false;
-            }
+            if (visit[i]) continue;
+
+            visit[i] = true;
+            arr[depth] = i + 1;
+            dfs(depth + 1);
+            visit[i] = false;
         }
     }
 
