@@ -18,8 +18,7 @@ public class 차이를_최대로 {
 
     static void permutation(int k) {
         if (k == n) {
-            int b = sumArray();
-            maxSum = Math.max(maxSum, b);
+            maxSum = Math.max(maxSum, sumArray());
             return;
         }
 
