@@ -27,8 +27,6 @@ public class 소수찾기 {
         powerSet(0);
         powerSet.forEach(subset -> permutation(subset.split(""), 0));
 
-//        permutationList.forEach(System.out::println);
-
         for (int p : permutationList) {
             if (isPrime(p)) answer++;
         }
