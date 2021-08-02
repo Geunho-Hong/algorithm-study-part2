@@ -18,7 +18,7 @@ public class 차이를_최대로 {
 
     static void permutation(int k) {
         if (k == n) {
-            maxSum = Math.max(maxSum, sumArray());
+            maxSum = Math.max(maxSum, calculate());
             return;
         }
 
@@ -29,7 +29,7 @@ public class 차이를_최대로 {
         }
     }
 
-    static int sumArray() {
+    static int calculate() {
         int sum = 0;
         for (int i = 1; i < n; i++) {
             sum += Math.abs(A[i - 1] - A[i]);
