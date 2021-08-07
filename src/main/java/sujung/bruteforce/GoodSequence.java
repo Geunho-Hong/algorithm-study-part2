@@ -21,6 +21,11 @@ public class GoodSequence {
         }
     }
 
+    /**
+     * 주어진 자릿수의 가장 작은 좋은 수열을 생성하는 함수 (순열)
+     * -> 수열의 구성 원소는 1, 2, 3
+     * @param index
+     */
     private static void go(int index) {
         if (finished) return;
 
@@ -39,6 +44,11 @@ public class GoodSequence {
         }
     }
 
+    /**
+     * 좋은 수열인지 판별하는 함수
+     * (부분 수열이 반복되지 않아야 함)
+     * @return
+     */
     private static boolean isGood() {
         if (sb.length() >= 2) {
             int length = sb.length();
