@@ -6,8 +6,8 @@ import java.io.InputStreamReader;
 
 public class 블랙잭 {
 
-    static int n;
-    static int m;
+    static int n; // 카드 개수
+    static int m; // 카드 숫자 최대 합
 
     static int[] cards;
     static boolean[] visit;
