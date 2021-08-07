@@ -6,6 +6,8 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.LinkedHashSet;
 
+// StringBuilder를 사용하면 생각보다 시간이 많이 걸릴수 있다.
+
 public class Question9 {
 
     private static int N, M;
