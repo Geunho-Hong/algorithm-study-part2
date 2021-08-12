@@ -54,7 +54,7 @@ public class 연산자_끼워넣기 {
             else if (operator[i] == '-') result -= A[i + 1];
             else if (operator[i] == '*') result *= A[i + 1];
             else if (operator[i] == '/') result /= A[i + 1];
-            else throw new IllegalStateException("적합하지 않은 연산자입니다.");
+            else throw new IllegalStateException("적절하지 않은 연산자입니다.");
         }
 
         return result;
