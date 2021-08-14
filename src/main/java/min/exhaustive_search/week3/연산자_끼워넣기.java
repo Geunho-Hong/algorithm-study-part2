@@ -9,7 +9,6 @@ public class 연산자_끼워넣기 {
     static int N;
     static int[] A;
     static char[] operator;
-    static boolean[] visit;
 
     static int maxResult = Integer.MIN_VALUE;
     static int minResult = Integer.MAX_VALUE;
@@ -31,7 +30,6 @@ public class 연산자_끼워넣기 {
             return;
         }
 
-        //TODO: 연속된 같은 연산자에 대한 순열 알고리즘 초적화하기
         for (int i = depth; i < N - 1; i++) {
             swap(i, depth);
             permutation(depth + 1);
@@ -65,7 +63,6 @@ public class 연산자_끼워넣기 {
             N = Integer.parseInt(br.readLine());
             A = new int[N];
             operator = new char[N - 1];
-            visit = new boolean[N - 1];
 
             String[] inputs = br.readLine().split(" ");
             for (int i = 0; i < inputs.length; i++)
