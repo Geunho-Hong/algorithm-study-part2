@@ -139,10 +139,23 @@ DFS
 </details>
 
 문자열
-- https://leetcode.com/problems/add-binary/
-- https://leetcode.com/problems/add-strings/
-- https://leetcode.com/problems/group-anagrams/
-- https://leetcode.com/problems/accounts-merge/
+
+<details>
+<summary>1주차</summary>
+<div markdown="1">
+- https://leetcode.com/problems/add-binary/ </br>
+- https://leetcode.com/problems/add-strings/ </br>
+- https://leetcode.com/problems/group-anagrams/ </br>
+- https://leetcode.com/problems/accounts-merge/ </br>
+</div>
+</details>
+
+<details>
+<summary>2주차</summary>
+<div markdown="1">
+- https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/ </br>
+</div>
+</details>
 
 정렬
 
