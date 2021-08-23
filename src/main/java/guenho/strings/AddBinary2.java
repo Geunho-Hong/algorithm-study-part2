@@ -16,7 +16,6 @@ public class AddBinary2 {
 
         StringBuilder sb = new StringBuilder();
         int sum = 0;
-        int idx = 0;
 
         while (sum > 0 || aLength >= 0 || bLength >= 0) {
 
@@ -28,8 +27,6 @@ public class AddBinary2 {
             }
             sb.append(sum % 2);
             sum /= 2;
-
-            idx ++;
         }
 
         return sb.reverse().toString();
