@@ -1,6 +1,4 @@
-package min.string;
-
-import java.math.BigInteger;
+package min.string.week1;
 
 public class AddStrings {
 

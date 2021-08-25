@@ -1,4 +1,4 @@
-package min.string;
+package min.string.week1;
 
 import java.util.*;
 
@@ -21,7 +21,7 @@ public class GroupAnagrams {
             Arrays.sort(chars);
             String key = String.valueOf(chars);
 
-            List<String> anagrams = null;
+            List<String> anagrams;
             if (groupMap.containsKey(key)) {
                 anagrams = groupMap.get(key);
             } else {

@@ -1,4 +1,4 @@
-package min.string;
+package min.string.week1;
 
 public class AddBinary {
 
