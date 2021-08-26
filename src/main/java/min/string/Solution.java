@@ -1,4 +1,4 @@
-package min.string.week1;
+package min.string;
 
 import java.util.*;
 
