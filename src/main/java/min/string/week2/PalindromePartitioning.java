@@ -5,10 +5,6 @@ import java.util.List;
 
 public class PalindromePartitioning {
 
-    public static void main(String[] args) {
-        List<List<String>> results = new PalindromePartitioning().partition("aab");
-    }
-
     public List<List<String>> partition(String s) {
         List<List<String>> results = new ArrayList<>();
         List<String> subResult = new ArrayList<>();
