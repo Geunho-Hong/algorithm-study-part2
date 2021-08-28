@@ -14,14 +14,13 @@ public class PalindromePartitioning {
         System.out.println(partition(s));
     }
 
+
     private static List<List<String>> partition(String s) {
 
         List<List<String>> result = new ArrayList<>();
 
-        ArrayList<String> partition = new ArrayList<String>();//track each possible partition
+        ArrayList<String> partition = new ArrayList<String>();
         addPalindrome(s, 0, partition, result);
-
-        System.out.println("result = " + result);
 
         return result;
     }
@@ -38,7 +37,6 @@ public class PalindromePartitioning {
 
         for (int i = index; i < s.length(); i++) {
             if (isPalindrome(s,index,i)) {
-                System.out.println("index =" + index);
                 partition.add(s.substring(index,i+1));
                 addPalindrome(s, i+1, partition, result);
                 partition.remove(partition.size() - 1);
