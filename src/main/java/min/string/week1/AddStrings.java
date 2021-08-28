@@ -2,11 +2,6 @@ package min.string.week1;
 
 public class AddStrings {
 
-    public static void main(String[] args) {
-        String result = new AddStrings().addStrings("11", "123");
-        System.out.println("result = " + result);
-    }
-
     public String addStrings(String num1, String num2) {
         // 큰 정수를 처리하기 위한 빌트인 라이브러리 사용 금지
         // 인풋 String 값을 바로 Integer 로 변환 금지
@@ -19,7 +14,7 @@ public class AddStrings {
             int sum = 0;
             if (i >= 0) sum += num1.charAt(i--) - '0';
             if (j >= 0) sum += num2.charAt(j--) - '0';
-            if (carry != 0) {
+            if (carry > 0) {
                 sum += carry;
                 carry = 0;
             }

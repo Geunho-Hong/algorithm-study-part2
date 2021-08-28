@@ -2,8 +2,8 @@ package min.string.week2;
 
 public class LongestPalindromicSubstring {
 
-    private int resultStartIdx;
-    private int maxLength;
+    int resultStartIdx;
+    int maxLength;
 
     public String longestPalindrome(String s) {
         if (s.length() < 2) return s;

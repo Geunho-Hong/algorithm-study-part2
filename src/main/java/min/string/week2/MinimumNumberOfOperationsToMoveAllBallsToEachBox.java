@@ -22,7 +22,7 @@ public class MinimumNumberOfOperationsToMoveAllBallsToEachBox {
         }
 
         int[] result = new int[boxesLength];
-        for (int i = 0; i < boxesLength; i++) {
+        for (int i = 0; i < boxesLength; i++) { // cur index = 0 indexes -> 1 2 3
             int sum = 0;
             for (Integer index : indexes) {
                 sum += Math.abs(index - i);
