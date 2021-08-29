@@ -170,6 +170,26 @@ DFS
 - 냅색
 - 트리 DP (DP 개념을 트리 자료구조에 적용)
 
+<details>
+<summary>1주차</summary>
+<div markdown="1">
+- https://www.acmicpc.net/problem/1463 </br>
+- https://www.acmicpc.net/problem/2293 </br>
+- https://www.acmicpc.net/problem/2294 </br>
+- https://www.acmicpc.net/problem/2193 </br>
+</div>
+</details>
+
+<details>
+<summary>2주차</summary>
+<div markdown="1">
+- https://www.acmicpc.net/problem/11048 </br>
+- https://www.acmicpc.net/problem/12865 </br>
+- https://www.acmicpc.net/problem/9251 </br>
+- https://www.acmicpc.net/problem/11053 </br>
+</div>
+</details>
+
 그리디
 
 다익스트라
