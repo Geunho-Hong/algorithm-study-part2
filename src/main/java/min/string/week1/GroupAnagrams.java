@@ -21,8 +21,8 @@ public class GroupAnagrams {
             anagrams.add(str);
         }
 
-        List<List<String>> results = new ArrayList<>();
-        groupMap.forEach((key, value) -> results.add(value));
+        List<List<String>> results = new ArrayList<>(groupMap.values());
+//        groupMap.forEach((key, value) -> results.add(value));
         return results;
     }
 
