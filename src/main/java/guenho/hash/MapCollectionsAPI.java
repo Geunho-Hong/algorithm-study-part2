@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 // https://rian-yeji.github.io/algorithm/2019/07/09/algorithm-hashmap-basic.html
+// https://dev.ebaykorea.com/18
 
 public class MapCollectionsAPI {
     public static void main(String[] args) {
@@ -35,8 +36,8 @@ public class MapCollectionsAPI {
 
         /**
          * V computeIfAbsent(K key, Function mappingFunction)
-         * 1. Key 값에 대해 어떻게 연산할지 정의 한다
-         * 2. Key 값이 없을 경우에만 Function 이 수행 된다
+         * 1. Key 값이 있는 경우 값을 반환 한다
+         * 2. Key 값이 없는 경우 lambda 연산을 수행 후 map에 추가 한뒤 값을 반환한다
          */
 
         Map<String,Integer> computeMap = new HashMap<>();
