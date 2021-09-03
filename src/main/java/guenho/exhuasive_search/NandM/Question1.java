@@ -35,11 +35,17 @@ public class Question1 {
             return;
         }
 
+        System.out.println("new");
+
         for (int i = 0; i < N; i++) {
+            System.out.println("not in : " + i);
             if (!visited[i]) {
+                System.out.println("i= " + i);
                 visited[i] = true;
                 arr[depth] = i + 1;
                 dfs(N, M, depth + 1);
+                System.out.println("i after = " + i);
+                System.out.println("test");
                 //sysout();
                 visited[i] = false;
             }
