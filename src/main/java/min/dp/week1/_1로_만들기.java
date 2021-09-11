@@ -1,4 +1,4 @@
-package min.dp;
+package min.dp.week1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
