@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
+// https://mygumi.tistory.com/69
 public class LIS {
 
     static int N;
