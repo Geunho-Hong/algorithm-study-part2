@@ -74,7 +74,9 @@ public class EstateNumberingDFS {
             for (int j = 0; j < N; j++) {
                 if (graph[i][j] == 1 && visited[i][j] == false) {
                     // 그래프가 1로 연걸되어있고, 방문하지 않았다면 연결
+                    System.out.println("graph = " + i + "," + j);
                     countList.add(dfs(i, j));
+                    System.out.println("fin");
                     cnt = 1;
                     answer++;
                 }
@@ -90,7 +92,5 @@ public class EstateNumberingDFS {
         for (int cnt : countList) {
             System.out.println(cnt);
         }
-
-
     }
 }
