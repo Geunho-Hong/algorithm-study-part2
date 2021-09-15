@@ -40,10 +40,16 @@ public class MazeExploration {
                         graph[nX][nY] = graph[qX][qY] + 1;   // 이동시 : 다음좌표 = 현재좌표 값 + 1;
                         // 이미 이동한 좌표 -> nX,nY는 다음 좌표 값 만 고려
 
-                        //sysout();
-                        //System.out.println("=====================");
-                    }
+                        sysout();
+                    };
+                    System.out.println();
+                    //System.out.println("in bfs");
+                    //sysout();
                 }
+            }
+            System.out.println("=======================");
+            for(Node node : queue) {
+                System.out.println("queue= " + node.x + "," + node.y);
             }
         }
     }
