@@ -175,10 +175,10 @@ DFS
 <details>
 <summary>2주차</summary>
 <div markdown="1">
-- https://programmers.co.kr/learn/courses/30/lessons/43164 (bfs & dfs)
-- https://leetcode.com/problems/search-insert-position/ (easy)
-- https://programmers.co.kr/learn/courses/30/lessons/64062 (medium)
-- https://www.acmicpc.net/problem/1654 (medium)
+- https://programmers.co.kr/learn/courses/30/lessons/43164 (bfs & dfs)  <br/>
+- https://leetcode.com/problems/search-insert-position/ (easy) <br/>
+- https://programmers.co.kr/learn/courses/30/lessons/64062 (medium) <br/>
+- https://www.acmicpc.net/problem/1654 (medium) <br/>
 </div>
 </details>
 
