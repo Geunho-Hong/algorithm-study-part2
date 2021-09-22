@@ -163,6 +163,25 @@ DFS
 정렬
 
 이분탐색
+<details>
+<summary>1주차</summary>
+<div markdown="1">
+- https://programmers.co.kr/learn/courses/30/lessons/43163 (bfs & dfs) </br>
+- https://www.acmicpc.net/problem/2805 <br/>
+- https://leetcode.com/problems/binary-search/ </br>
+- https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/ <br/>
+</div>
+</details>
+<details>
+<summary>2주차</summary>
+<div markdown="1">
+- https://programmers.co.kr/learn/courses/30/lessons/43164 (bfs & dfs)  <br/>
+- https://leetcode.com/problems/search-insert-position/ (easy) <br/>
+- https://programmers.co.kr/learn/courses/30/lessons/64062 (medium) <br/>
+- https://www.acmicpc.net/problem/1654 (medium) <br/>
+</div>
+</details>
+
 
 다이나믹 프로그래밍 (DP, 동적 계획법)
 - LIS
