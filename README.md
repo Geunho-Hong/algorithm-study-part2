@@ -172,6 +172,16 @@ DFS
 - https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/ <br/>
 </div>
 </details>
+<details>
+<summary>2주차</summary>
+<div markdown="1">
+- https://programmers.co.kr/learn/courses/30/lessons/43164 (bfs & dfs)
+- https://leetcode.com/problems/search-insert-position/ (easy)
+- https://programmers.co.kr/learn/courses/30/lessons/64062 (medium)
+- https://www.acmicpc.net/problem/1654 (medium)
+</div>
+</details>
+
 
 다이나믹 프로그래밍 (DP, 동적 계획법)
 - LIS
