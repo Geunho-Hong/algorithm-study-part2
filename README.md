@@ -161,6 +161,16 @@ DFS
 </details>
 
 정렬
+<details>
+<summary>1주차</summary>
+<div markdown="1">
+- https://programmers.co.kr/learn/courses/30/lessons/42748 (easy) </br>
+- https://programmers.co.kr/learn/courses/30/lessons/42889 (easy ~ medium) </br>
+- https://leetcode.com/problems/sort-colors/ (medium) </br>
+- https://www.acmicpc.net/problem/7576 (bfs & dfs)  </br>
+</div>
+</details>
+
 
 이분탐색
 <details>
