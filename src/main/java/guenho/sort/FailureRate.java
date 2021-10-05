@@ -77,6 +77,8 @@ public class FailureRate {
         return answer;
     }
 
+
+    // Comparator -> Comparable
     private static class Stage {
 
         private int stage;

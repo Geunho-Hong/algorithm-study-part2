@@ -171,6 +171,16 @@ DFS
 </div>
 </details>
 
+<details>
+<summary>2주차</summary>
+<div markdown="1">
+- https://programmers.co.kr/learn/courses/30/lessons/42583 (Queue)</br>
+- https://www.acmicpc.net/problem/9205 (bfs & dfs)</br>
+- https://leetcode.com/problems/car-pooling/ (medium) </br>
+- https://leetcode.com/problems/rank-transform-of-an-array/ (easy) </br>
+</div>
+</details>
+
 
 이분탐색
 <details>
