@@ -176,8 +176,8 @@ DFS
 <div markdown="1">
 - https://programmers.co.kr/learn/courses/30/lessons/42583 (Queue)</br>
 - https://www.acmicpc.net/problem/9205 (bfs & dfs)</br>
-- https://leetcode.com/problems/car-pooling/ (medium) </br>
-- https://leetcode.com/problems/rank-transform-of-an-array/ (easy) </br>
+- https://app.codility.com/programmers/lessons/6-sorting/max_product_of_three/ (easy) </br>
+- https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_intersections/ (medium) </br>
 </div>
 </details>
 
