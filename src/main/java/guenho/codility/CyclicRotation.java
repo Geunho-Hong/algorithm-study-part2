@@ -1,7 +1,5 @@
 package guenho.codility;
 
-import java.util.Arrays;
-
 public class CyclicRotation {
     public static void main(String[] args) {
         //int[] arr = {3, 8, 9, 7, 6};
