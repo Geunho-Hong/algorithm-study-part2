@@ -230,6 +230,16 @@ DFS
 </details>
 
 그리디
+<details>
+<summary>1주차</summary>
+<div markdown="1">
+- https://app.codility.com/programmers/lessons/16-greedy_algorithms/max_nonoverlapping_segments/ </br>
+- https://app.codility.com/programmers/lessons/16-greedy_algorithms/tie_ropes/ </br>
+- https://programmers.co.kr/learn/courses/30/lessons/42883 </br>
+- https://www.acmicpc.net/problem/17070
+ </br>
+</div>
+</details>
 
 다익스트라
 
