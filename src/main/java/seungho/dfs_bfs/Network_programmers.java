@@ -5,7 +5,7 @@ public class Network_programmers {
 
     public int solution(int n, int[][] computers) {
         int answer = 0;
-        visit = new boolean[n + 1];
+        visit = new boolean[n];
 
         for (int i = 0; i < computers.length; i++) {
             if (!visit[i]) {
