@@ -1,3 +1,5 @@
+package seungho.hash;
+
 import java.util.*;
 
 class Music implements Comparable<Music> {
@@ -31,7 +33,7 @@ class Music implements Comparable<Music> {
 }
 
 
-class Solution {
+class Best_album {
     public int[] solution(String[] genres, int[] plays) {
         // 장르 순서 정하기
         Map<String, Integer> genres_order = new LinkedHashMap<>();
@@ -88,13 +90,4 @@ class Solution {
         return result;
     }
 
-
-    public static void main(String[] args) {
-        Solution s = new Solution();
-        String[] genres = {"classic", "pop", "classic", "classic", "pop" };
-        int[] plays = {500, 600, 150, 800, 2500};
-
-        Arrays.stream(s.solution(genres, plays)).forEach(System.out::println);
-
-    }
 }

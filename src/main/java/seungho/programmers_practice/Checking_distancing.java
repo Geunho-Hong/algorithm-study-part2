@@ -1,4 +1,6 @@
-class Solution {
+package seungho.programmers_practice;
+
+public class Checking_distancing {
     boolean[][] check;
 
     public int[] solution(String[][] places) {
