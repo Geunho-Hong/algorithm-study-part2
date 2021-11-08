@@ -259,5 +259,11 @@ DFS
 세그먼트 트리
 - 기본적인 문제들 풀 수 있을정도
 
+## Part2
+1주차
+- https://www.acmicpc.net/problem/5557 </br>
+- https://programmers.co.kr/learn/courses/30/lessons/64061 (구현.1)</br>
+- https://programmers.co.kr/learn/courses/30/lessons/72411 (구현 + dfs)</br>
+
 [50문제]
 https://cafe.naver.com/startdevelopercareer?iframe_url_utf8=%2FArticleRead.nhn%253FfromPopular%3Dtrue%2526clubid%3D30372458%2526articleid%3D6
